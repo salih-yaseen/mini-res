@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "title": "Pizza",
+        "price": 6,
+        "category": "Foods",
+        "image": "https://i.pinimg.com/originals/e7/71/0a/e7710a3fe5cc3721c1ff630f3f90bd17.jpg"
+
+    },
+    {
+        "id": 2,
+        "title": "Burger",
+        "price": 5,
+        "category": "Foods",
+        "image": "https://avmcart.com/storage/categories/4845624.jpeg"
+
+    },
+    {
+        "id": 3,
+        "title": "Shawarma",
+        "price": 2.5,
+        "category": "Foods",
+        "image":"https://static.toiimg.com/thumb/64696930.cms?imgsize=329052&width=800&height=800"
+    },
+    {
+        "id": 4,
+        "title": "Biryani",
+        "price": 4,
+        "category": "Foods",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/%22Hyderabadi_Dum_Biryani%22.jpg"
+
+    },
+    {
+        "id": 5,
+        "title": "Coca Cola",
+        "price": 1,
+        "category": "Drinks",
+        "image": "https://static.turbosquid.com/Preview/2019/11/26__14_37_42/Image_00000.png16943A41-7936-4BDB-B81C-80FC093F9EC1Large.jpg"
+
+    },
+    {
+        "id": 6,
+        "title": "Mountain Dew",
+        "price": 1,
+        "category": "Drinks",
+        "image": "https://www.kindpng.com/picc/m/4-49851_download-mountain-dew-clipart-hq-png-image-mountain.png"
+
+    },
+    {
+        "id": 7,
+        "title": "Single shot Espresso",
+        "price": 1.5,
+        "category": "Drinks",
+        "image": "https://64.media.tumblr.com/00e2ffa38d1b6e32b7b283b5c18f4cdc/tumblr_njp9dcgRkV1ungxeyo1_1280.jpg"
+
+    },
+    {
+        "id": 8,
+        "title": "Water",
+        "price": 0.5,
+        "category": "Drinks",
+        "image": "https://www.bigbasket.com/media/uploads/p/xxl/265894_7-aquafina-packaged-drinking-water.jpg"
+
+    }
+]

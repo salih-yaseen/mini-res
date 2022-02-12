@@ -1,15 +1,20 @@
 import { useSelector } from "react-redux";
 import CartItem from "../Compenents/CartItem";
+import React, { useContext } from 'react';
+import { DarkModeContext } from '../Context/DarkModeContex';
 
 const Cart = () => {
   const { cartItems, totalAmount, quantity } = useSelector((state) => state.cart);
-
+  const {darkMode} = useContext(DarkModeContext);
+  
   if (quantity === 0) {
-    return <h2 className="my-20 text-3xl font-bold text-red-700	">No items in cart...</h2>;
+    return <div className={darkMode ? `h-screen bg-slate-800` : ` h-screen bg-white`} >
+      <h2 className="my-20 text-3xl font-bold text-red-700	">No items in cart...</h2>
+    </div>;
   }
-
+  
   return (
-    <div className="flex flex-col my-2">
+    <div className={darkMode ? `flex flex-col my-2 h-screen bg-slate-800` : `flex flex-col my-2 h-screen bg-white`}>
       <h1 className="font-bold font-mono text-3xl" >Cart</h1>
       <div className="flex h-auto flex-col justify-around">
         {cartItems.map((item) => (

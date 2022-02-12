@@ -5,7 +5,7 @@ const Product = ({ id, image, title, price , category }) => {
   const dispatch = useDispatch();
 
   return (
-    <div className="w-80 h-auto	 shadow-md	rounded-lg my-6">
+    <div className="bg-white w-80 h-auto	 shadow-md	rounded-lg my-6">
       <div className="">
         <img src={image} alt={title} className='rounded-lg w-full h-56'/>
       </div>

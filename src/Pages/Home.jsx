@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import axios from "axios";
 import Product from "../Compenents/Product";
-
+import { DarkModeContext } from '../Context/DarkModeContex';
 function Home() {
   const [products, setProducts] = useState([]);
+  const {darkMode} = useContext(DarkModeContext);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -16,7 +17,8 @@ function Home() {
   
 
   return (
-    <div className="flex flex-row flex-wrap justify-around">
+  <div className={darkMode ? `flex flex-wrap justify-between bg-slate-800` : `flex flex-wrap justify-between  bg-white`}>
+      
       {products.map((product) => (
         <Product key={product.id} {...product} />
       ))}
